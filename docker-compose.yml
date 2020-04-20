@@ -1,0 +1,9 @@
+version: '3'
+services:
+  jenkins-server:
+    image: jenkins/jenkins:lts-centos
+    environment:
+      jenkins_home: "/var/jenkins_home"
+    ports:
+      - 50000:50000
+      - 8080:8080 
